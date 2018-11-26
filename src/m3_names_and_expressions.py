@@ -90,7 +90,7 @@ print(math.sqrt(number))
 # After you have written and run the code to learn the TYPE
 # of each of the above, change the above _TODO_ to DONE.
 ###############################################################################
-
+print(type(3 + 3))
 ###############################################################################
 #
 # TODO: 6.
