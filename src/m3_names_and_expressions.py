@@ -32,13 +32,14 @@ import math
 number = 77 + math.cos(2.75)
 print(math.sqrt(number))
 ###############################################################################
-# TODO: 3.
+# DONE: 3.
 #   Immediately below this _TODO_, write code that computes and prints:
 #      the square root of ((41 * 88) + (4 * the cosine of 2))
 #   Use as few or as many intermediate names as you feel appropriate.
 #   Run your code (fix errors as needed), then change the above _TODO_ to DONE.
-###############################################################################
-
+##############################################################################
+import math
+print(math.sqrt(41 * 88) + (4 * math.cos(2)))
 ###############################################################################
 # TODO: 4.
 #   Immediately below this _TODO_,
@@ -48,8 +49,9 @@ print(math.sqrt(number))
 #   Print both of the expressions that you write.
 #   Run your code (fix errors as needed), then change the above _TODO_ to DONE.
 ###############################################################################
-
-
+import math
+print(math.sqrt(2))
+print(2 ** 0.5)
 ###############################################################################
 # TODO: 5.
 #   Every object has a TYPE and a VALUE.  For example,
