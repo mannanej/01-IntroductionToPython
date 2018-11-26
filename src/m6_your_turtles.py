@@ -28,3 +28,12 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #   Don't forget to COMMIT-and-PUSH when you are done with this module.
 #
 ########################################################################
+import rosegraphics as rg
+size = 300
+window = rg.TurtleWindow()
+jason = rg.SimpleTurtle('turtle')
+tyler = rg.SimpleTurtle('turtle')
+jason.pen = rg.Pen('red', 10)
+jason.speed = 10
+for k in range(200):
+    jason.draw_circle(size)
