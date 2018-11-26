@@ -46,7 +46,7 @@ import rosegraphics as rg
 
 ###############################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Run this module.  A window will pop up and Turtles will move around.
 #   After the Turtles stop moving,
 #      ** click anywhere in the window to close the window **.
@@ -80,13 +80,11 @@ import rosegraphics as rg
 # -----------------------------------------------------------------------------
 window = rg.TurtleWindow()
 window.delay(20)  # Bigger numbers mean slower animation.
-
 # -----------------------------------------------------------------------------
 # The next few lines show how to:
 #   - CONSTRUCT (make) a  SimpleTurtle  object and ASSIGN a NAME to the object.
 # -----------------------------------------------------------------------------
 boris = rg.SimpleTurtle()
-
 # -----------------------------------------------------------------------------
 # The next few lines show how to:
 #   - Ask the SimpleTurtle object to do things by applying METHODs to it.
@@ -95,7 +93,6 @@ boris = rg.SimpleTurtle()
 boris.forward(100)
 boris.left(90)
 boris.forward(200)
-
 # -----------------------------------------------------------------------------
 # The next few lines show how to:
 #   - Construct a second SimpleTurtle,
@@ -111,10 +108,9 @@ natasha.forward(125)
 
 natasha.speed = 1  # Now slower
 natasha.go_to(rg.Point(-100, 200))
-
 ###############################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a few more lines of your own code to make one of the existing
 #   SimpleTurtles move some more and/or have different characteristics.
 #
@@ -124,10 +120,16 @@ natasha.go_to(rg.Point(-100, 200))
 #   As always, test by running the module.
 #
 ###############################################################################
-
+natasha.speed = 10
+natasha.right(90)
+natasha.forward(100)
+natasha.left(90)
+natasha.forward(250)
+natasha.left(90)
+natasha.forward(500)
 ###############################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The above code  CONSTRUCTS  two SimpleTurtle objects
 #   and gives those objects NAMES:
 #       boris    natasha
@@ -151,10 +153,25 @@ natasha.go_to(rg.Point(-100, 200))
 #   As always, test by running the module.
 #
 ###############################################################################
-
+kent = rg.SimpleTurtle('turtle')
+kent.pen = rg.Pen('purple', 30)
+kent.speed = 10
+kent.right(180)
+kent.forward(200)
+kent.right(90)
+kent.backward(200)
+kent.right(90)
+kent.forward(500)
+justin = rg.SimpleTurtle('turtle')
+justin.pen = rg.Pen('black', 50)
+justin.speed = 10
+justin.left(180)
+justin.forward(200)
+justin.left(90)
+justin.forward(200)
 ###############################################################################
 #
-# TODO: 6.
+# DONE: 6.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #   Run one more time to be sure that all is still OK.
 #
